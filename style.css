@@ -278,6 +278,7 @@ body{
         margin: 0 3rem;
         height: 30rem;
         width: 90%;
+        animation: slidefromLeft 1.9s ease forwards;
     }
 }
 
