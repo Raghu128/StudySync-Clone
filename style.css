@@ -415,6 +415,7 @@ body{
     padding: 1rem 0.1rem;
     margin: 0.6rem;
     color: white;
+    visibility: hidden;
 }
 
 
@@ -480,6 +481,26 @@ body{
     background-color: rgb(113, 77, 151);
 }
 
+
+.card.show {
+    background-color: #3f83f8;
+    animation: scaleIn 3s forwards; 
+    visibility: visible;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.3);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
 @media screen and (max-width:600px) {
     .footer-card{
         grid-template-columns: repeat(1,1fr);
@@ -532,6 +553,10 @@ body{
     margin: 1rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonail-card.show {
+    animation: scaleIn 3s forwards; 
 }
 
 .testimonail-card:hover{
